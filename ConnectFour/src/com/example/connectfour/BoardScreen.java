@@ -88,20 +88,16 @@ public class BoardScreen
         {
             tileBoard[xC][yC].setFillColor(P1);
             String result = c4.checkHorizontally();
-            if (result == null)
-                result = c4.checkVertically();
-            if (result != null)
-                infoLabel.setText(result);
+            if(result == null) result = c4.checkVertically();
+            if(result != null)  infoLabel.setText(result);
         }
 
         else if (c4.getCell(here) == BoardState.PLAYERTWO_SPOT)
         {
             tileBoard[xC][yC].setFillColor(P2);
             String result = c4.checkHorizontally();
-            if (result == null)
-                result = c4.checkVertically();
-            if (result != null)
-                infoLabel.setText(result);
+            if(result == null) result = c4.checkVertically();
+            if(result != null)  infoLabel.setText(result);
         }
 
     }
